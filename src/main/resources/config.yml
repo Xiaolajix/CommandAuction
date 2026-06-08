@@ -1,0 +1,46 @@
+commandauction:
+  settings:
+    min_start_price: 10
+    min_duration: 10
+    max_duration: 3600
+    auto_increment_percent: 10
+    default_economy: vault
+  messages:
+    no_permission: "&c你没有权限使用此命令!"
+    no_auction: "&c当前没有正在进行的拍卖!"
+    auction_started: "&a拍卖已开始!"
+    bid_success: "&a出价成功!"
+    bid_failed: "&c出价失败!"
+    buy_success: "&a购买成功!"
+    auction_ended: "&e拍卖已结束!"
+  broadcast:
+    enabled: true
+    title: "&6望天拍卖场> &7{starter} 发起了一场拍卖!"
+    clickable: "&a[点击参与]"
+    item_line: "&7物品: {displayName}"
+    start_price_line: "&7起拍价: {startPrice}"
+    buy_now_line: "&7一口价: {buyNowPrice}"
+    duration_line: "&7持续时间: {duration}秒"
+    command_line: "&7使用 /cmdauc gui 打开拍卖界面"
+    end_winner_line: "&7恭喜 {winner} 已以 {price} 的价格竞得 {displayName}!"
+    end_price_line: ""
+    end_no_bid_line: "&7由于长时间无人出价，{displayName} 已流拍。"
+  auction_templates:
+    default:
+      display_item: CHEST
+      display_name: "&e神秘宝箱"
+      lore:
+        - "&7这是一个神秘的拍卖物品"
+        - "&7点击参与竞拍"
+    fly:
+      display_item: FEATHER
+      display_name: "&e飞行权限"
+      lore:
+        - "&7获得飞行权限"
+        - "&7体验自由翱翔的乐趣"
+    vip:
+      display_item: DIAMOND
+      display_name: "&eVIP特权"
+      lore:
+        - "&7尊贵的VIP身份"
+        - "&7享受专属特权"

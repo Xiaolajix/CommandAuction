@@ -1,0 +1,20 @@
+name: CommandAuction
+version: 1.2
+main: com.commandauction.CommandAuction
+api-version: 1.12
+authors: [TraeAI]
+description: 一个允许拍卖控制台执行命令的插件
+softdepend: [Vault, PlayerPoints, PlaceholderAPI]
+
+commands:
+  cmdauc:
+    description: 拍卖主命令
+    aliases: [auc, auction, commandauc]
+
+permissions:
+  commandauction.admin:
+    description: 允许使用管理员功能
+    default: op
+  commandauction.use:
+    description: 允许参与拍卖
+    default: true
